@@ -10,13 +10,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        GeometryReader { geometry in
+            ZStack(alignment: .center) {
+                VStack {
+                    Image("LogoTypeH").resizable().scaledToFit()
+                    Button(action: {
+                        print("Create New Playlist")
+                    }) {
+                        // TODO: Add Localizable
+                        Text("Button_CreateNewPlaylist")
+                        Text("Settings")
+
+                    }
+                    Button(action: {
+                        print("Open Settings View")
+                    }) {
+                        // TODO: Add Localizable
+                        Text("Button_OpenSettings View")
+                    }
+                }
+                .padding()
+            }
         }
-        .padding()
     }
 }
 

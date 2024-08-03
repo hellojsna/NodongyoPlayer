@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "NodongyoPlayer로고타입가로형.Black.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "NodongyoPlayer로고타입가로형.White.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
