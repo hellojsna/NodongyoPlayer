@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F121CE52C5E6B6B001D96BB /* NodongyoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F121CE42C5E6B6B001D96BB /* NodongyoPlayerApp.swift */; };
+		7F121CE72C5E6B6B001D96BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F121CE62C5E6B6B001D96BB /* ContentView.swift */; };
+		7F121CE92C5E6B6D001D96BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F121CE82C5E6B6D001D96BB /* Assets.xcassets */; };
+		7F121CEC2C5E6B6D001D96BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F121CEB2C5E6B6D001D96BB /* Preview Assets.xcassets */; };
+		7F121CF72C5E6B6D001D96BB /* NodongyoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F121CF62C5E6B6D001D96BB /* NodongyoPlayerTests.swift */; };
+		7F121D012C5E6B6D001D96BB /* NodongyoPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F121D002C5E6B6D001D96BB /* NodongyoPlayerUITests.swift */; };
+		7F121D032C5E6B6D001D96BB /* NodongyoPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F121D022C5E6B6D001D96BB /* NodongyoPlayerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F121CF32C5E6B6D001D96BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F121CD92C5E6B6B001D96BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F121CE02C5E6B6B001D96BB;
+			remoteInfo = NodongyoPlayer;
+		};
+		7F121CFD2C5E6B6D001D96BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F121CD92C5E6B6B001D96BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F121CE02C5E6B6B001D96BB;
+			remoteInfo = NodongyoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F121CE12C5E6B6B001D96BB /* NodongyoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodongyoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F121CE42C5E6B6B001D96BB /* NodongyoPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodongyoPlayerApp.swift; sourceTree = "<group>"; };
+		7F121CE62C5E6B6B001D96BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F121CE82C5E6B6D001D96BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F121CEB2C5E6B6D001D96BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F121CED2C5E6B6D001D96BB /* NodongyoPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NodongyoPlayer.entitlements; sourceTree = "<group>"; };
+		7F121CF22C5E6B6D001D96BB /* NodongyoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NodongyoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F121CF62C5E6B6D001D96BB /* NodongyoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodongyoPlayerTests.swift; sourceTree = "<group>"; };
+		7F121CFC2C5E6B6D001D96BB /* NodongyoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NodongyoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F121D002C5E6B6D001D96BB /* NodongyoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodongyoPlayerUITests.swift; sourceTree = "<group>"; };
+		7F121D022C5E6B6D001D96BB /* NodongyoPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodongyoPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F121CDE2C5E6B6B001D96BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F121CEF2C5E6B6D001D96BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F121CF92C5E6B6D001D96BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F121CD82C5E6B6B001D96BB = {
+			isa = PBXGroup;
+			children = (
+				7F121CE32C5E6B6B001D96BB /* NodongyoPlayer */,
+				7F121CF52C5E6B6D001D96BB /* NodongyoPlayerTests */,
+				7F121CFF2C5E6B6D001D96BB /* NodongyoPlayerUITests */,
+				7F121CE22C5E6B6B001D96BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F121CE22C5E6B6B001D96BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F121CE12C5E6B6B001D96BB /* NodongyoPlayer.app */,
+				7F121CF22C5E6B6D001D96BB /* NodongyoPlayerTests.xctest */,
+				7F121CFC2C5E6B6D001D96BB /* NodongyoPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F121CE32C5E6B6B001D96BB /* NodongyoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7F121CE42C5E6B6B001D96BB /* NodongyoPlayerApp.swift */,
+				7F121CE62C5E6B6B001D96BB /* ContentView.swift */,
+				7F121CE82C5E6B6D001D96BB /* Assets.xcassets */,
+				7F121CED2C5E6B6D001D96BB /* NodongyoPlayer.entitlements */,
+				7F121CEA2C5E6B6D001D96BB /* Preview Content */,
+			);
+			path = NodongyoPlayer;
+			sourceTree = "<group>";
+		};
+		7F121CEA2C5E6B6D001D96BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F121CEB2C5E6B6D001D96BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F121CF52C5E6B6D001D96BB /* NodongyoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F121CF62C5E6B6D001D96BB /* NodongyoPlayerTests.swift */,
+			);
+			path = NodongyoPlayerTests;
+			sourceTree = "<group>";
+		};
+		7F121CFF2C5E6B6D001D96BB /* NodongyoPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F121D002C5E6B6D001D96BB /* NodongyoPlayerUITests.swift */,
+				7F121D022C5E6B6D001D96BB /* NodongyoPlayerUITestsLaunchTests.swift */,
+			);
+			path = NodongyoPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F121CE02C5E6B6B001D96BB /* NodongyoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F121D062C5E6B6D001D96BB /* Build configuration list for PBXNativeTarget "NodongyoPlayer" */;
+			buildPhases = (
+				7F121CDD2C5E6B6B001D96BB /* Sources */,
+				7F121CDE2C5E6B6B001D96BB /* Frameworks */,
+				7F121CDF2C5E6B6B001D96BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NodongyoPlayer;
+			productName = NodongyoPlayer;
+			productReference = 7F121CE12C5E6B6B001D96BB /* NodongyoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F121CF12C5E6B6D001D96BB /* NodongyoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F121D092C5E6B6D001D96BB /* Build configuration list for PBXNativeTarget "NodongyoPlayerTests" */;
+			buildPhases = (
+				7F121CEE2C5E6B6D001D96BB /* Sources */,
+				7F121CEF2C5E6B6D001D96BB /* Frameworks */,
+				7F121CF02C5E6B6D001D96BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F121CF42C5E6B6D001D96BB /* PBXTargetDependency */,
+			);
+			name = NodongyoPlayerTests;
+			productName = NodongyoPlayerTests;
+			productReference = 7F121CF22C5E6B6D001D96BB /* NodongyoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F121CFB2C5E6B6D001D96BB /* NodongyoPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F121D0C2C5E6B6D001D96BB /* Build configuration list for PBXNativeTarget "NodongyoPlayerUITests" */;
+			buildPhases = (
+				7F121CF82C5E6B6D001D96BB /* Sources */,
+				7F121CF92C5E6B6D001D96BB /* Frameworks */,
+				7F121CFA2C5E6B6D001D96BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F121CFE2C5E6B6D001D96BB /* PBXTargetDependency */,
+			);
+			name = NodongyoPlayerUITests;
+			productName = NodongyoPlayerUITests;
+			productReference = 7F121CFC2C5E6B6D001D96BB /* NodongyoPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F121CD92C5E6B6B001D96BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					7F121CE02C5E6B6B001D96BB = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					7F121CF12C5E6B6D001D96BB = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 7F121CE02C5E6B6B001D96BB;
+					};
+					7F121CFB2C5E6B6D001D96BB = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 7F121CE02C5E6B6B001D96BB;
+					};
+				};
+			};
+			buildConfigurationList = 7F121CDC2C5E6B6B001D96BB /* Build configuration list for PBXProject "NodongyoPlayer" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F121CD82C5E6B6B001D96BB;
+			productRefGroup = 7F121CE22C5E6B6B001D96BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F121CE02C5E6B6B001D96BB /* NodongyoPlayer */,
+				7F121CF12C5E6B6D001D96BB /* NodongyoPlayerTests */,
+				7F121CFB2C5E6B6D001D96BB /* NodongyoPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F121CDF2C5E6B6B001D96BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F121CEC2C5E6B6D001D96BB /* Preview Assets.xcassets in Resources */,
+				7F121CE92C5E6B6D001D96BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F121CF02C5E6B6D001D96BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F121CFA2C5E6B6D001D96BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F121CDD2C5E6B6B001D96BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F121CE72C5E6B6B001D96BB /* ContentView.swift in Sources */,
+				7F121CE52C5E6B6B001D96BB /* NodongyoPlayerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F121CEE2C5E6B6D001D96BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F121CF72C5E6B6D001D96BB /* NodongyoPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F121CF82C5E6B6D001D96BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F121D032C5E6B6D001D96BB /* NodongyoPlayerUITestsLaunchTests.swift in Sources */,
+				7F121D012C5E6B6D001D96BB /* NodongyoPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F121CF42C5E6B6D001D96BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F121CE02C5E6B6B001D96BB /* NodongyoPlayer */;
+			targetProxy = 7F121CF32C5E6B6D001D96BB /* PBXContainerItemProxy */;
+		};
+		7F121CFE2C5E6B6D001D96BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F121CE02C5E6B6B001D96BB /* NodongyoPlayer */;
+			targetProxy = 7F121CFD2C5E6B6D001D96BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7F121D042C5E6B6D001D96BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F121D052C5E6B6D001D96BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		7F121D072C5E6B6D001D96BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NodongyoPlayer/NodongyoPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NodongyoPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NLT9UH89L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Nodongyo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jsna.NodongyoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7F121D082C5E6B6D001D96BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NodongyoPlayer/NodongyoPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NodongyoPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NLT9UH89L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Nodongyo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jsna.NodongyoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7F121D0A2C5E6B6D001D96BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NLT9UH89L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jsna.NodongyoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NodongyoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NodongyoPlayer";
+			};
+			name = Debug;
+		};
+		7F121D0B2C5E6B6D001D96BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NLT9UH89L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jsna.NodongyoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NodongyoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NodongyoPlayer";
+			};
+			name = Release;
+		};
+		7F121D0D2C5E6B6D001D96BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NLT9UH89L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jsna.NodongyoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NodongyoPlayer;
+			};
+			name = Debug;
+		};
+		7F121D0E2C5E6B6D001D96BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NLT9UH89L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jsna.NodongyoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NodongyoPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F121CDC2C5E6B6B001D96BB /* Build configuration list for PBXProject "NodongyoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F121D042C5E6B6D001D96BB /* Debug */,
+				7F121D052C5E6B6D001D96BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F121D062C5E6B6D001D96BB /* Build configuration list for PBXNativeTarget "NodongyoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F121D072C5E6B6D001D96BB /* Debug */,
+				7F121D082C5E6B6D001D96BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F121D092C5E6B6D001D96BB /* Build configuration list for PBXNativeTarget "NodongyoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F121D0A2C5E6B6D001D96BB /* Debug */,
+				7F121D0B2C5E6B6D001D96BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F121D0C2C5E6B6D001D96BB /* Build configuration list for PBXNativeTarget "NodongyoPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F121D0D2C5E6B6D001D96BB /* Debug */,
+				7F121D0E2C5E6B6D001D96BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F121CD92C5E6B6B001D96BB /* Project object */;
+}
