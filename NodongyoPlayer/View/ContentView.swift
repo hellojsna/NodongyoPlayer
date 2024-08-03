@@ -15,6 +15,7 @@ struct ContentView: View {
     @State var showPlaylistCreationView: Bool = false
     @State var showSettingsView: Bool = false
     
+    @State var Test_VideoURL: String = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .center) {
@@ -54,6 +55,7 @@ struct ContentView: View {
                             }
                         }
                     }
+                    WebView(url: Test_VideoURL, isCheckingVideoTitle: true)
                 }
                 .padding()
             }.sheet(isPresented: $showPlayerView) {

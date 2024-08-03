@@ -19,6 +19,8 @@ struct WebView: NSViewRepresentable {
         webView.load(URLRequest(url: url))
         if isCheckingVideoTitle {
             webView.evaluateJavaScript("document.body.innerHTML", completionHandler: { (value: Any!, error: Error!) -> Void in
+                // TODO: Get YouTube video's title
+                
             })
         }
         return webView
