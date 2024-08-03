@@ -17,6 +17,8 @@
 		7FE056892C5E7D1A006ABBE1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE056882C5E7D1A006ABBE1 /* Localizable.xcstrings */; };
 		7FE0568D2C5E7DE3006ABBE1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0568C2C5E7DE3006ABBE1 /* SettingsView.swift */; };
 		7FE056912C5E7E9B006ABBE1 /* PlaylistCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE056902C5E7E9B006ABBE1 /* PlaylistCreationView.swift */; };
+		7FE056932C5E86AB006ABBE1 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE056922C5E86AB006ABBE1 /* PlayerView.swift */; };
+		7FE056952C5E8C39006ABBE1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE056942C5E8C39006ABBE1 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		7FE056882C5E7D1A006ABBE1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		7FE0568C2C5E7DE3006ABBE1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7FE056902C5E7E9B006ABBE1 /* PlaylistCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCreationView.swift; sourceTree = "<group>"; };
+		7FE056922C5E86AB006ABBE1 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		7FE056942C5E8C39006ABBE1 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				7F121CE62C5E6B6B001D96BB /* ContentView.swift */,
+				7FE056942C5E8C39006ABBE1 /* WebView.swift */,
 				7FE0568C2C5E7DE3006ABBE1 /* SettingsView.swift */,
 				7FE056902C5E7E9B006ABBE1 /* PlaylistCreationView.swift */,
+				7FE056922C5E86AB006ABBE1 /* PlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,6 +295,8 @@
 				7FE0568D2C5E7DE3006ABBE1 /* SettingsView.swift in Sources */,
 				7F121CE72C5E6B6B001D96BB /* ContentView.swift in Sources */,
 				7F121CE52C5E6B6B001D96BB /* NodongyoPlayerApp.swift in Sources */,
+				7FE056952C5E8C39006ABBE1 /* WebView.swift in Sources */,
+				7FE056932C5E86AB006ABBE1 /* PlayerView.swift in Sources */,
 				7FE056912C5E7E9B006ABBE1 /* PlaylistCreationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

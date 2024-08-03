@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
+    "Hello, world!" : {
+
+    },
     "Hello, World!" : {
       "localizations" : {
         "en" : {
@@ -21,12 +24,12 @@
         }
       }
     },
-    "새 플레이리스트" : {
+    "노동요 추가" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "New Playlist"
+            "value" : "Add Nodongyo"
           }
         }
       }
@@ -37,6 +40,46 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Settings"
+          }
+        }
+      }
+    },
+    "저장 및 재생" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save and Play"
+          }
+        }
+      }
+    },
+    "취소" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "플레이리스트 수정" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit Playlist"
+          }
+        }
+      }
+    },
+    "플레이리스트가 비어 있습니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Playlist is empty."
           }
         }
       }

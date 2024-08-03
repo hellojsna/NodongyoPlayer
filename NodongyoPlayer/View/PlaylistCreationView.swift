@@ -9,16 +9,24 @@
 import SwiftUI
 
 struct PlaylistCreationView: View {
-    @State var PlaylistName: String = "New Playlist"
-    @State var MusicList: [Music] = [Music(Name: "", URL: "", type: "YouTube")]
+    @Environment(\.openWindow) private var openWindow
+
+    @State var MusicListBackup: [Music] = [Music(Name: "", URL: "", type: "")]
     @State var MusicURLInputText: String = ""
+
+    @Binding var MusicList: [Music]
+    @Binding var showPlayerView: Bool
+    @Binding var showPlaylistCreationView: Bool
+    
+    @State var Test_VideoURL: String = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     var body: some View {
-        TextField("새 플레이리스트", text: $PlaylistName).font(.title).bold()
+        Text("플레이리스트 수정").font(.title).bold()
         HStack {
             TextField("URL", text: $MusicURLInputText)
             Button(action: {
                 if MusicURLInputText.contains("youtu") {
                     MusicList.append(Music(Name: "New YouTube Video", URL: MusicURLInputText, type: "YouTube"))
+                    Test_VideoURL = MusicURLInputText
                 } else {
                     // TODO: Add support to other platforms.
                     print("Not YouTube Video")
@@ -28,6 +36,11 @@ struct PlaylistCreationView: View {
                 Image(systemName: "plus")
             }
         }
+        .onAppear {
+            MusicListBackup = MusicList
+        }
+        Divider()
+
         List($MusicList, editActions: .delete) { $music in
             if music.URL != "" {
                 VStack(alignment: .leading) {
@@ -41,11 +54,29 @@ struct PlaylistCreationView: View {
                 }
             }
         }
+        // TODO: Use this to get video's title?
+        WebView(url: Test_VideoURL, isCheckingVideoTitle: true)
+        
+        HStack {
+            Button(action: {
+                showPlaylistCreationView = false
+                MusicList = MusicListBackup
+            }) {
+                Image(systemName: "xmark")
+                Text("취소")
+            }
+            Button(action: {
+                showPlaylistCreationView = false
+            }) {
+                Image(systemName: "play.fill")
+                Text("저장 및 재생")
+            }
+        }
     }
 }
 
 #Preview {
-    PlaylistCreationView()
+    PlaylistCreationView(MusicList: .constant([Music(Name: "", URL: "", type: "")]), showPlayerView: .constant(false), showPlaylistCreationView: .constant(true))
 }
 
 struct Music: Identifiable {
