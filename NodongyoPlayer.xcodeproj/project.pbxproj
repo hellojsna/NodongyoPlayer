@@ -50,6 +50,7 @@
 		7F121CFC2C5E6B6D001D96BB /* NodongyoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NodongyoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F121D002C5E6B6D001D96BB /* NodongyoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodongyoPlayerUITests.swift; sourceTree = "<group>"; };
 		7F121D022C5E6B6D001D96BB /* NodongyoPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodongyoPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7FB0E2612C6BCBE000C13D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7FE056882C5E7D1A006ABBE1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		7FE0568C2C5E7DE3006ABBE1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7FE056902C5E7E9B006ABBE1 /* PlaylistCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCreationView.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		7F121CE32C5E6B6B001D96BB /* NodongyoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				7FB0E2612C6BCBE000C13D60 /* Info.plist */,
 				7F121CE42C5E6B6B001D96BB /* NodongyoPlayerApp.swift */,
 				7FE056852C5E7C6A006ABBE1 /* View */,
 				7F121CE82C5E6B6D001D96BB /* Assets.xcassets */,
@@ -468,6 +470,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NodongyoPlayer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Nodongyo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -498,6 +501,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NodongyoPlayer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Nodongyo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

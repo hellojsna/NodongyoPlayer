@@ -10,13 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     @State var MusicList: [Music] = [Music(Name: "", URL: "", type: "YouTube")]
-    @State var MusicPlayerQueue: [Music] = [Music(Name: "", URL: "", type: "YouTube")]
-
+    @State var MusicPlayerQueue: [String] = [""]
+    @State var MusicPlayerIndex: Int = 1
+    @State var IsMusicPlaying: Bool = false
+    
     @State var showPlayerView: Bool = false
     @State var showPlaylistCreationView: Bool = false
     @State var showSettingsView: Bool = false
     
-    @State var Test_VideoURL: String = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    //@State var Test_VideoURL: String = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .center) {
@@ -64,7 +66,17 @@ struct ContentView: View {
                             }
                         }
                     }
-                    //WebView(url: Test_VideoURL)
+                    if IsMusicPlaying {
+                        WebViewForPlayingMusic(urlList: MusicPlayerQueue, musicIndex: MusicPlayerIndex)
+                            .onOpenURL { url in
+                                if url.scheme == "nodongyoplayer" && url.host == "playnextqueue" {
+                                    MusicPlayerIndex += 1
+                                    if MusicPlayerIndex > MusicPlayerQueue.count {
+                                        IsMusicPlaying = false
+                                    }
+                                }
+                            }
+                    }
                 }
                 .padding()
             }.sheet(isPresented: $showPlayerView) {
@@ -76,7 +88,14 @@ struct ContentView: View {
                     .padding(15)
                     .frame(width: geometry.size.width, height: geometry.size.height)
                     .onDisappear {
-                        
+                        if MusicList.count > 1 {
+                            MusicPlayerQueue = [""]
+                            MusicPlayerQueue.remove(at: 0)
+                            for music in MusicList {
+                                MusicPlayerQueue.append(music.URL)
+                            }
+                            IsMusicPlaying = true
+                        }
                     }
             }.sheet(isPresented: $showSettingsView) {
                 SettingsView()
