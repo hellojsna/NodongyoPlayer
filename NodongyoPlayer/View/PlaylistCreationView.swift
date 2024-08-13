@@ -16,6 +16,8 @@ struct PlaylistCreationView: View {
     
     @State var GetVideoTitle: String = ""
     
+    @State var DisableButtons: Bool = false
+    
     @Binding var MusicList: [Music]
     @Binding var showPlayerView: Bool
     @Binding var showPlaylistCreationView: Bool
@@ -25,18 +27,14 @@ struct PlaylistCreationView: View {
         Text("플레이리스트 수정").font(.title).bold()
         HStack {
             TextField("URL", text: $MusicURLInputText)
-            Button(action: {
-                if MusicURLInputText.contains("youtu") {
-                    MusicList.append(Music(Name: "\(MusicURLInputText) Checking Title... 제목 확인 중...", URL: MusicURLInputText, type: "YouTube"))
-                    Test_VideoURL = MusicURLInputText
-                } else {
-                    // TODO: Add support to other platforms.
-                    print("Not YouTube Video")
+                .onSubmit {
+                    AddMusicToPlaylist()
                 }
-                MusicURLInputText = ""
+            Button(action: {
+                AddMusicToPlaylist()
             }) {
                 Image(systemName: "plus")
-            }
+            }.disabled(DisableButtons)
         }
         .onAppear {
             MusicListBackup = MusicList
@@ -53,10 +51,24 @@ struct PlaylistCreationView: View {
                         Text(music.type)
                         Spacer()
                     }
+                }.contextMenu {
+                    Button(action: {
+                        if let index = MusicList.firstIndex(of: music) {
+                            MusicList.remove(at: index)
+                        }
+                    }){
+                        Text("삭제")
+                    }
                 }
                 if music.Name == "\(music.URL) Checking Title... 제목 확인 중..." {
                     // TODO: Use this to get video's title?
                     WebViewForCheckingTitle(url: Test_VideoURL, VideoTitle: $GetVideoTitle)
+                        .onAppear {
+                            DisableButtons = true
+                        }
+                        .onDisappear {
+                            DisableButtons = false
+                        }
                         .frame(width: 1, height: 1)
                         .onChange(of: GetVideoTitle) {
                             music.Name = GetVideoTitle
@@ -78,8 +90,19 @@ struct PlaylistCreationView: View {
             }) {
                 Image(systemName: "play.fill")
                 Text("저장 및 재생")
-            }
+            }.disabled(DisableButtons)
         }
+    }
+    func AddMusicToPlaylist() {
+        if MusicURLInputText.contains("youtu") {
+            MusicURLInputText = MusicURLInputText.components(separatedBy: "&t=")[0]
+            MusicList.append(Music(Name: "\(MusicURLInputText) Checking Title... 제목 확인 중...", URL: MusicURLInputText, type: "YouTube"))
+            Test_VideoURL = MusicURLInputText
+        } else {
+            // TODO: Add support to other platforms.
+            print("Not YouTube Video")
+        }
+        MusicURLInputText = ""
     }
 }
 
@@ -87,7 +110,7 @@ struct PlaylistCreationView: View {
     PlaylistCreationView(MusicList: .constant([Music(Name: "", URL: "", type: "")]), showPlayerView: .constant(false), showPlaylistCreationView: .constant(true))
 }
 
-struct Music: Identifiable {
+struct Music: Identifiable, Equatable, Hashable {
     let id = UUID()
     var Name: String
     var URL: String

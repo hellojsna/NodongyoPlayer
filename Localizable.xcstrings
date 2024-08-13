@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
-    "Hello, world!" : {
-
-    },
     "Hello, World!" : {
       "localizations" : {
         "en" : {
@@ -30,6 +27,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add Nodongyo"
+          }
+        }
+      }
+    },
+    "삭제" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
           }
         }
       }

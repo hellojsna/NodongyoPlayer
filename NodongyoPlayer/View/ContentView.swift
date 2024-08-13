@@ -51,11 +51,19 @@ struct ContentView: View {
                                         Text(music.type)
                                         Spacer()
                                     }
+                                }.contextMenu {
+                                    Button(action: {
+                                        if let index = MusicList.firstIndex(of: music) {
+                                            MusicList.remove(at: index)
+                                        }
+                                    }){
+                                        Text("삭제")
+                                    }
                                 }
                             }
                         }
                     }
-                    WebView(url: Test_VideoURL)
+                    //WebView(url: Test_VideoURL)
                 }
                 .padding()
             }.sheet(isPresented: $showPlayerView) {
