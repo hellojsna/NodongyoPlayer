@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State var MusicList: [Music] = [Music(Name: "", URL: "", type: "YouTube")]
-    
+    @State var MusicPlayerQueue: [Music] = [Music(Name: "", URL: "", type: "YouTube")]
+
     @State var showPlayerView: Bool = false
     @State var showPlaylistCreationView: Bool = false
     @State var showSettingsView: Bool = false
@@ -74,6 +75,9 @@ struct ContentView: View {
                 PlaylistCreationView(MusicList: $MusicList, showPlayerView: $showPlayerView, showPlaylistCreationView: $showPlaylistCreationView)
                     .padding(15)
                     .frame(width: geometry.size.width, height: geometry.size.height)
+                    .onDisappear {
+                        
+                    }
             }.sheet(isPresented: $showSettingsView) {
                 SettingsView()
                     .padding(15)

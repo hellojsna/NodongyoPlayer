@@ -28,7 +28,9 @@ struct PlaylistCreationView: View {
         HStack {
             TextField("URL", text: $MusicURLInputText)
                 .onSubmit {
-                    AddMusicToPlaylist()
+                    if !DisableButtons {
+                        AddMusicToPlaylist()
+                    }
                 }
             Button(action: {
                 AddMusicToPlaylist()
@@ -41,38 +43,49 @@ struct PlaylistCreationView: View {
         }
         Divider()
         
-        List($MusicList, editActions: .delete) { $music in
-            if music.URL != "" {
-                VStack(alignment: .leading) {
-                    // TODO: Make it deletable
-                    Text(music.Name).font(.title2).bold()
-                    HStack {
-                        Text(music.URL)
-                        Text(music.type)
-                        Spacer()
-                    }
-                }.contextMenu {
-                    Button(action: {
-                        if let index = MusicList.firstIndex(of: music) {
-                            MusicList.remove(at: index)
+        List {
+            ForEach($MusicList, editActions: .delete) { $music in
+                if music.URL != "" {
+                    VStack(alignment: .leading) {
+                        // TODO: Make it deletable
+                        Text(music.Name).font(.title2).bold()
+                        HStack {
+                            Text(music.URL)
+                            Text(music.type)
+                            Spacer()
                         }
-                    }){
-                        Text("삭제")
+                    }
+                    .contextMenu {
+                        Button(action: {
+                            if let index = MusicList.firstIndex(of: music) {
+                                MusicList.remove(at: index)
+                            }
+                        }){
+                            Text("삭제")
+                        }
+                    }
+                    if music.Name == "\(music.URL) Checking Title... 제목 확인 중..." {
+                        // TODO: Use this to get video's title?
+                        WebViewForCheckingTitle(url: Test_VideoURL, VideoTitle: $GetVideoTitle)
+                            .onAppear {
+                                DisableButtons = true
+                            }
+                            .onDisappear {
+                                DisableButtons = false
+                            }
+                            .frame(width: 1, height: 1)
+                            .onChange(of: GetVideoTitle) {
+                                music.Name = GetVideoTitle
+                                GetVideoTitle = ""
+                            }
                     }
                 }
-                if music.Name == "\(music.URL) Checking Title... 제목 확인 중..." {
-                    // TODO: Use this to get video's title?
-                    WebViewForCheckingTitle(url: Test_VideoURL, VideoTitle: $GetVideoTitle)
-                        .onAppear {
-                            DisableButtons = true
-                        }
-                        .onDisappear {
-                            DisableButtons = false
-                        }
-                        .frame(width: 1, height: 1)
-                        .onChange(of: GetVideoTitle) {
-                            music.Name = GetVideoTitle
-                        }
+            }.onMove { indices, newOffset in
+                if !DisableButtons {
+                    MusicList.move(
+                        fromOffsets: indices,
+                        toOffset: newOffset
+                    )
                 }
             }
         }
