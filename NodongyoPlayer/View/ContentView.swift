@@ -55,7 +55,7 @@ struct ContentView: View {
                             }
                         }
                     }
-                    WebView(url: Test_VideoURL, isCheckingVideoTitle: true)
+                    WebView(url: Test_VideoURL)
                 }
                 .padding()
             }.sheet(isPresented: $showPlayerView) {

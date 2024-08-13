@@ -10,10 +10,12 @@ import SwiftUI
 
 struct PlaylistCreationView: View {
     @Environment(\.openWindow) private var openWindow
-
+    
     @State var MusicListBackup: [Music] = [Music(Name: "", URL: "", type: "")]
     @State var MusicURLInputText: String = ""
-
+    
+    @State var GetVideoTitle: String = ""
+    
     @Binding var MusicList: [Music]
     @Binding var showPlayerView: Bool
     @Binding var showPlaylistCreationView: Bool
@@ -25,7 +27,7 @@ struct PlaylistCreationView: View {
             TextField("URL", text: $MusicURLInputText)
             Button(action: {
                 if MusicURLInputText.contains("youtu") {
-                    MusicList.append(Music(Name: "New YouTube Video", URL: MusicURLInputText, type: "YouTube"))
+                    MusicList.append(Music(Name: "\(MusicURLInputText) Checking Title... 제목 확인 중...", URL: MusicURLInputText, type: "YouTube"))
                     Test_VideoURL = MusicURLInputText
                 } else {
                     // TODO: Add support to other platforms.
@@ -40,7 +42,7 @@ struct PlaylistCreationView: View {
             MusicListBackup = MusicList
         }
         Divider()
-
+        
         List($MusicList, editActions: .delete) { $music in
             if music.URL != "" {
                 VStack(alignment: .leading) {
@@ -52,10 +54,16 @@ struct PlaylistCreationView: View {
                         Spacer()
                     }
                 }
+                if music.Name == "\(music.URL) Checking Title... 제목 확인 중..." {
+                    // TODO: Use this to get video's title?
+                    WebViewForCheckingTitle(url: Test_VideoURL, VideoTitle: $GetVideoTitle)
+                        .frame(width: 1, height: 1)
+                        .onChange(of: GetVideoTitle) {
+                            music.Name = GetVideoTitle
+                        }
+                }
             }
         }
-        // TODO: Use this to get video's title?
-        WebView(url: Test_VideoURL, isCheckingVideoTitle: true)
         
         HStack {
             Button(action: {
