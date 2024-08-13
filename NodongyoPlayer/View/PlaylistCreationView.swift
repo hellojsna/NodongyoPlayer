@@ -12,6 +12,9 @@ struct PlaylistCreationView: View {
     @Environment(\.openWindow) private var openWindow
     
     @State var MusicListBackup: [Music] = [Music(Name: "", URL: "", type: "")]
+    
+    @State var MusicTitleCache: [String: String] = ["": ""]
+    
     @State var MusicURLInputText: String = ""
     
     @State var GetVideoTitle: String = ""
@@ -76,6 +79,7 @@ struct PlaylistCreationView: View {
                             .frame(width: 1, height: 1)
                             .onChange(of: GetVideoTitle) {
                                 music.Name = GetVideoTitle
+                                MusicTitleCache[Test_VideoURL] = music.Name
                                 GetVideoTitle = ""
                             }
                     }
@@ -109,7 +113,11 @@ struct PlaylistCreationView: View {
     func AddMusicToPlaylist() {
         if MusicURLInputText.contains("youtu") {
             MusicURLInputText = MusicURLInputText.components(separatedBy: "&t=")[0]
-            MusicList.append(Music(Name: "\(MusicURLInputText) Checking Title... 제목 확인 중...", URL: MusicURLInputText, type: "YouTube"))
+            if let CachedTitle = MusicTitleCache[MusicURLInputText] {
+                MusicList.append(Music(Name: CachedTitle, URL: MusicURLInputText, type: "YouTube"))
+            } else {
+                MusicList.append(Music(Name: "\(MusicURLInputText) Checking Title... 제목 확인 중...", URL: MusicURLInputText, type: "YouTube"))
+            }
             Test_VideoURL = MusicURLInputText
         } else {
             // TODO: Add support to other platforms.
